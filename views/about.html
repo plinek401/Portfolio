@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+    <head>
+        <title>Pawel Linek</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Portfolio Landing Page">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Pawel Linek">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="../styles/general_style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="navbar" id = "navbar" role="navigation">
+            <a id ="navbar-name" href="../index.html">Pawel Linek</a>
+            <a href="../index.html">Home</a>
+            <a href="../views/about.html">About</a>
+            <span class="dropdown">
+                <button class="dropbtn">Projects 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="../views/projects/project1/project1.html">Linked List Visualizer</a>
+                  <a href="../views/projects/project2/project2.html">Music Making App</a>
+                  <!--<a href="../views/projects/project3/project3.html">Project 3</a>-->
+                </div>
+            </span> 
+            <a href="../views/contact.html">Contact</a>
+            <a class="icon" id = "ham" onclick="ExpandNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div> 
+        <div class = "main-container">
+            <div class = "main-container-left">
+                <div class = "header-name">
+                    <h1>Pawel Linek</h1>
+                </div>
+                <div class = "header-title">
+                    <h3>Software Engineer</h3>
+                </div>
+                <div class = "header-image">
+                </div>
+            </div>
+            <div class = "main-container-right">
+                <div class = "header-paragraph">
+                    <h2 style = "font-size: 35px; padding-bottom: 10px;">About</h2>
+                    <p><i>
+                        Hi! My name is Pawel Linek, and I'm a recent University of Rhode Island Computer Science and Data Science double major! I was born in Poland and moved to Rhode Island when I was about 5 years old. At that time I barely even knew what a computer was but slowly overtime I became quite accustomed to it. I started off at URI as a Pharm D major but quickly realized I'd rather spend my day finding where a missing semicolon is rather than standing behind a counter in a lab coat (No offense lab coat wearers)!
+                        <br><br>
+
+
+                        I love learning about algorithms, data structures, web development and solving puzzles/riddles. I'm constantly up to something, whether that's an internship, a course, or just refining my skills overall! Currently I'm part of Per Schola's 14 week Java Full-Stack developer course where I'm working to build a Java-based Full-Stack project!                         
+                        </i></p>
+                </div>
+            </div>    
+            <div class ="socials">
+                <div class = "socials-header"><h3>Socials</h3></div>
+                <div class = "social-icons">
+                    <a href="https://twitter.com/polska_linels" target = "_blank" class="fa fa-twitter"></a>
+                    <a href="https://github.com/plinek401" target = "_blank" class="fa fa-github"></a>
+                    <a href="https://www.linkedin.com/in/pawellinek/" target = "_blank" class="fa fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="../scripts/hamburger.js"></script>
+    </body>
+</html>

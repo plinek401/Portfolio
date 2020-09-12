@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+    <head>
+        <title>Pawel Linek</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Portfolio Landing Page">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Pawel Linek">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles/general_style.css">
+        <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+        <div class="navbar" id = "navbar" role="navigation">
+            <a id ="navbar-name" href="./index.html">Pawel Linek</a>
+            <a href="./index.html">Home</a>
+            <a href="./views/about.html">About</a>
+            <span class="dropdown">
+                <button class="dropbtn">Projects 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="./views/projects/project1/project1.html">Linked List Visualizer</a>
+                  <a href="./views/projects/project2/project2.html">Music Making App</a>
+                  <!--<a href="./views/projects/project3/project3.html">Project 3</a>-->
+                </div>
+            </span> 
+            <a href="./views/contact.html">Contact</a>
+            <a class="icon" id = "ham" onclick="ExpandNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div> 
+        
+        <div class = "main-container">
+            <div class = "main-container-left">
+                <div class = "header-name">
+                    <h1>Pawel Linek</h1>
+                </div>
+                <div class = "header-title">
+                    <h3>Software Engineer</h3>
+                </div>
+                <div class = "header-image">
+                </div>
+            </div>
+            <div class = "main-container-right">
+                <div class = "header-paragraph">
+                    <p><i>Welcome to my Portfolio!
+                        <br><br>
+                        Feel free to check out my "About Me" page and some of my projects. Also, my socials are linked below.
+                        <br><br>
+                        Thanks for stopping by!
+                        </i></p>
+                </div>
+            </div>    
+            <div class ="socials">
+                <div class = "socials-header"><h3>Socials</h3></div>
+                <div class = "social-icons">
+                    <a href="https://twitter.com/polska_linels" target = "_blank" class="fa fa-twitter"></a>
+                    <a href="https://github.com/plinek401" target = "_blank" class="fa fa-github"></a>
+                    <a href="https://www.linkedin.com/in/pawellinek/" target = "_blank" class="fa fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="./scripts/hamburger.js"></script>
+    </body>
+</html>

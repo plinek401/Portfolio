@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+    <head>
+        <title>Music App</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Portfolio Landing Page">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Pawel Linek">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="../../../styles/general_style.css">
+        <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+        <div class="navbar" id = "navbar">
+            <a id ="navbar-name" href="../../../index.html">Pawel Linek</a>
+            <a href="../../../index.html">Home</a>
+            <a href="../../about.html">About</a>
+            <span class="dropdown">
+                <button class="dropbtn">Projects 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../project1/project1.html">Linked List Visualizer</a>
+                    <a href="../project2/project2.html">Music Making App</a>
+                    <!--<a href="../project3/project3.html">Project 3</a>-->
+                </div>
+            </span> 
+            <a href="../../contact.html">Contact</a>
+            <a class="icon" id = "ham" onclick="ExpandNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <body>
+        <div class="app">
+            <header>
+                <h1>Music App</h1>
+                <p>Make music by tapping.</p>
+            </header>
+            
+            <div class="visual"></div>
+            <div class="pads">
+                <div class = "pad1">
+                    <audio class="sound" src="sounds/bubbles.mp3"></audio>
+                </div>
+                <div class = "pad2">
+                    <audio class="sound" src="sounds/clay.mp3"></audio>
+                </div>
+                <div class = "pad3">
+                    <audio class="sound" src="sounds/confetti.mp3"></audio>
+                </div>
+                <div class = "pad4">
+                    <audio class="sound" src ="sounds/glimmer.mp3"></audio>
+                </div>
+                <div class = "pad5">
+                    <audio class="sound" src="sounds/moon.mp3"></audio>
+                </div>
+                <div class = "pad6">
+                    <audio class="sound" src="sounds/ufo.mp3"></audio>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="../../../scripts/hamburger.js"></script>
+        <script src="scripts.js"></script>
+    </body>
+    </body>
+</html>

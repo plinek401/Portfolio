@@ -1,0 +1,303 @@
+/*---------------------------------navbar---------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+body {
+    margin: 0;
+    background-color: #abe9cd;
+    background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 100%);
+    background-size: 200% 200%;
+    
+    -webkit-animation: AnimationName 40s ease infinite;
+    -moz-animation: AnimationName 40s ease infinite;
+    animation: AnimationName 40s ease infinite;
+}
+/*Animating the gradient color change*/
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+.navbar {
+    display: block;
+    position: relative;
+    top: 0px;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+}
+
+#navbar-name{
+    font-size: 25px;
+    padding: 10px;
+}
+
+#navbar-name:hover{
+    background-color: #333;
+}
+
+.navbar>a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    overflow: hidden;
+    float: left;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: white;
+    outline-color: white;
+    color: white;
+    padding: 16px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    float: left;
+    text-decoration: none;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 52px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+/*The :focus psuedo-element makes the dropdown menu appear when tab hovers over projects*/
+.dropdown:hover .dropdown-content, .dropdown:focus-within .dropdown-content{
+    display: block;
+}
+
+.navbar a.icon {
+    display: none;
+}
+
+/*----------------------------------Main Body-------------------------------*/
+
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    color: white;
+}
+
+.main-container-left, .main-container-right{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0px 30px;
+}
+.main-container-left{
+    height: 40%;
+    width: 40%;
+    border-right: 5px solid white;
+    padding-top: 0;
+}
+.main-container-right{
+    width: 60%;
+}
+.main-container-left .header-name{
+    font-size: 25px;
+    width: 100%;
+}
+.main-container-left .header-image{
+    display: block;
+    margin-top: 30px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url("../images/headshot.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 65%;
+}
+.main-container-left .header-title{
+    font-size: 20px;
+    width: 100%;
+}
+.main-container-right .header-paragraph{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/*-------------------------------------------Socials------------------------------*/
+.socials{
+    width: 120px;
+    font-size: 30px;
+    margin: auto;
+    margin-top: 10px;
+}
+.socials .socials-header{
+    border-bottom: 4px solid white;
+}
+
+/*Social Icons*/
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+.social-icons>a{
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10%  10% 50% 10%;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-github{
+    background: #111;
+    color: white;
+}
+
+
+
+/*------------------------------------Media Query--------------------------------------*/
+
+@media only screen and (max-width: 600px) {
+    
+    /*Media Navbar*/
+    .navbar #navbar-name{
+        display: block;
+    }
+    
+    .navbar>a , .navbar span{
+        display: none;
+    }
+    
+    .navbar a.icon{
+        background: inherit;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    .navbar a.icon:hover{
+        background: #555;
+    }
+    
+    .navbar-toggled>a, .navbar-toggled>span, .navbar-toggled>span>button{
+        display: block;
+        width: 100%;
+        text-align: right;
+        float: right;
+    }
+    
+    .dropdown-content {
+        position: relative;
+        top: 0;
+    }
+    
+    .dropdown-content>a {
+        float: left;
+        text-align: center;
+        width: 100%;
+        background-color: #eee;
+    }
+    
+    /*Media General body reorganization*/
+    .main-container{
+        margin-top: 20px;    
+    }
+    
+    .main-container-left{
+        display: block;
+        width: 100%;
+        border: none;
+        margin-bottom: 5vh;
+    }
+    
+    .main-container-left .header-image{
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+    .main-container-right{
+        display: block;
+        width: 100%;
+        border: none;
+    }
+    
+    
+    /*Media Project 1 Linked List Visualizer button reorganization*/
+    .buttonSection{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .eachButton:nth-child(1){
+        width: 100vw;
+    }
+    
+    .btnflex{
+        width: 20vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

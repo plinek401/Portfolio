@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+    <head>
+        <title>Pawel Linek</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Portfolio Landing Page">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Pawel Linek">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="../styles/general_style.css">
+        <link rel ="stylesheet" href = "../styles/contact.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="navbar" id = "navbar" role="navigation">
+            <a id ="navbar-name" href="../index.html">Pawel Linek</a>
+            <a href="../index.html">Home</a>
+            <a href="../views/about.html">About</a>
+            <span class="dropdown">
+                <button class="dropbtn">Projects 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="../views/projects/project1/project1.html">Linked List Visualizer</a>
+                  <a href="../views/projects/project2/project2.html">Music Making App</a>
+                  <!--<a href="./views/projects/project3/project3.html">Project 3</a>-->
+                </div>
+            </span> 
+            <a href="./contact.html">Contact</a>
+            <a class="icon" id = "ham" onclick="ExpandNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div> 
+        <br><br><br>
+        <div class = "contact-header">
+            <h1>Contact</h1>
+        </div>
+        <div class = "contact-paragraph">
+            <p>Thanks for checking out my site, feel free to reach out with the form below.</p>
+        </div>
+        <form id = "form">
+            <div class = "name">
+                <input type = "text" placeholder = "Name" required>
+            </div>
+            <div class = "email">
+                <input id = "email" type ="text" placeholder = "Email" onblur="ValidateEmail(this)" required>
+                <div id="popupArrow" class = "warn"></div>
+                <div class = "warn" id="popup"><p id = "popupText"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>Please enter a valid email.</p></div>
+            </div>
+            <div class = "text">
+                <textarea placeholder = "Your Message" required></textarea>
+            </div>
+            <div class = "submit-btn">
+                <button type = "submit" id="form" class = "submit">Send</button>
+            </div>
+        </form>
+        <script type = "text/javascript" src="../scripts/hamburger.js"></script>
+        <script type = "text/javascript" src="../scripts/emailValidation.js"></script>
+    </body>
+</html>
